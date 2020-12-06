@@ -1,0 +1,92 @@
+.game-container {
+  color: #fff;
+  width: calc(320px + 30px);
+  height: calc(320px + 30px);
+  background-color: rgb(174, 159, 144);
+  border: 10px rgb(174, 159, 144) solid;
+  box-sizing: content-box;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .game-over {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #fff;
+    margin: auto;
+    position: fixed;
+    opacity: 0.5;
+    background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1504509899,382113070&fm=26&gp=0.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #fff;
+  }
+  .square {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: rgb(194, 180, 166);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    &:nth-child(4n+5) {
+      margin-right: 0;
+    }
+  }
+  .back-2 { background-color: #eee4da; color: rgb(102, 93, 84); }
+  .back-4 { background-color: #eee4da; color: rgb(102, 93, 84); }
+  .back-8 { background-color: #f26179; }
+  .back-16 { background-color: #f59563; }
+  .back-32 { background-color: #f67c5f; }
+  .back-64 { background-color: #f65e36; }
+  .back-128 { background-color: #edcf72; }
+  .back-256 { background-color: #edcc61; }
+  .back-512 { background-color: #9c0; }
+  .back-1024 { background-color: #3365a5; }
+  .back-2048 { background-color: #09c; }
+  .back-4096 { background-color: #a6bc; }
+  .back-8192 { background-color: #93c; }
+
+  .handle-area {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .score {
+      color: #646566;
+      font-size: 25px;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+    .reset {
+      color: #fff;
+      background-color: #07c160;
+      border: 1px solid #07c160;
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      height: 44px;
+      font-size: 16px;
+      line-height: 1.2;
+      text-align: center;
+      border-radius: 2px;
+      cursor: pointer;
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+      -webkit-appearance: none;
+      padding: 0 15px;
+      font-size: 14px;
+    }
+  }
+}
